@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\Brian\source\repos\GameEngine3D\GameEngine3D\Source.cpp(336,148): warning C4244: 'argument': conversion from 'float' to 'int32_t', possible loss of data
+C:\Users\Brian\source\repos\GameEngine3D\GameEngine3D\Source.cpp(336,127): warning C4244: 'argument': conversion from 'float' to 'int32_t', possible loss of data
+C:\Users\Brian\source\repos\GameEngine3D\GameEngine3D\Source.cpp(336,106): warning C4244: 'argument': conversion from 'float' to 'int32_t', possible loss of data
+C:\Users\Brian\source\repos\GameEngine3D\GameEngine3D\Source.cpp(336,85): warning C4244: 'argument': conversion from 'float' to 'int32_t', possible loss of data
+C:\Users\Brian\source\repos\GameEngine3D\GameEngine3D\Source.cpp(336,64): warning C4244: 'argument': conversion from 'float' to 'int32_t', possible loss of data
+C:\Users\Brian\source\repos\GameEngine3D\GameEngine3D\Source.cpp(336,43): warning C4244: 'argument': conversion from 'float' to 'int32_t', possible loss of data
+  GameEngine3D.vcxproj -> C:\Users\Brian\source\repos\GameEngine3D\Debug\GameEngine3D.exe
