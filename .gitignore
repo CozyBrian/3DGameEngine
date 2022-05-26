@@ -1,3 +1,5 @@
-/Debug
 /.vs
+/Debug
+/Release
 /GameEngine3D/Debug
+/GameEngine3D/Release
