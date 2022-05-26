@@ -88,6 +88,28 @@ private:
 
     float fTheta;
 
+    string LoadFile()
+    {
+        ifstream ff("fileToOpen.txt");
+        if (!ff.is_open())
+        {
+            return " ";
+        }
+        string file;
+
+        while (!ff.eof())
+        {
+            char line[128];
+            ff.getline(line, 128);
+
+            strstream s;
+            s << line;
+
+            s >> file;
+        }
+        return file;
+    }
+
     vec3d Matrix_MultiplyVector(mat4x4 &m, vec3d &i)
     {
         vec3d v;
@@ -423,8 +445,7 @@ private:
 public:
     bool OnUserCreate() override
     {
-
-        meshCube.LoadFromObjectFile("axis.obj");
+        meshCube.LoadFromObjectFile(LoadFile());
 
         // Projection Matrix
         matProj = Matrix_MakeProjection(90.0f, (float)ScreenHeight() / (float)ScreenWidth(), 0.1f, 1000.0f);
@@ -663,7 +684,7 @@ int main()
 {
 
     GameEngine game;
-    if (game.Construct(256, 240, 4, 4))
+    if (game.Construct(1280, 720, 1, 1))
     {
         game.Start();
     }
